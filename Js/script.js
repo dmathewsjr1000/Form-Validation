@@ -1,56 +1,56 @@
-// Declaring  of Variables
+// // Declaring  of Variables
 
-const registerForm = document.getElementById('registration');
-const errorDisplayDiv = document.getElementById('errorDisplay');
-const username = registerForm["username"];
-const email = registerForm["email"];
-const password = registerForm["password"];
-const passwordCheck = registerForm["paswordCheck"];
+// const registerForm = document.getElementById('registration');
+// const errorDisplayDiv = document.getElementById('errorDisplay');
+// const username = registerForm["username"];
+// const email = registerForm["email"];
+// const password = registerForm["password"];
+// const passwordCheck = registerForm["paswordCheck"];
 
-console.log(username);
+// console.log(username);
 
-registerForm.addEventListener('submit', validate);
+// registerForm.addEventListener('submit', validate);
 
-function validate(e) {
+// function validate(e) {
     
-     const nameVal = checkUserName();
+//      const nameVal = checkUserName();
      
-     if (nameVal === false) {
-           e.returnValue = false;
-      alert("Please provide a User Name.");
-         username.focus();
-        // e.preventdefault();
-        // return false;
+//      if (nameVal === false) {
+//            e.returnValue = false;
+//       alert("Please provide a User Name.");
+//          username.focus();
+//         // e.preventdefault();
+//         // return false;
     
-     } 
+//      } 
 
-     if (!regex.test(username.value)) {
-       const regex = /^.{4,}$/;
-        alert('Please re-enter name with 4 or more character.');
-        username.focus();
-        // return false;
-    }
+//      if (!regex.test(username.value)) {
+//        const regex = /^.{4,}$/;
+//         alert('Please re-enter name with 4 or more character.');
+//         username.focus();
+//         // return false;
+//     }
     
      
-    const twoUniqueChars = /^(?=.*(.).*\1).*$/;
+//     const twoUniqueChars = /^(?=.*(.).*\1).*$/;
 
-    if (!twoUniqueChars.test(username.value)) {
-        alert('Provide two special characters');
-        username.focus();
-        return false;
-    }
-    return username.value;
+//     if (!twoUniqueChars.test(username.value)) {
+//         alert('Provide two special characters');
+//         username.focus();
+//         return false;
+//     }
+//     return username.value;
 
-    const emailVal = validateEmail();
-  if (emailVal === false) {
-    e.returnValue = false;
-    return false;
-  }
+//     const emailVal = validateEmail();
+//   if (emailVal === false) {
+//     e.returnValue = false;
+//     return false;
+//   }
 
    
-}
+// }
 
   
-      function checkUserName() {}
+//       function checkUserName() {}
   
 
