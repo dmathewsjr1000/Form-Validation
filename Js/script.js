@@ -12,9 +12,9 @@ console.log(username);
 registerForm.addEventListener('submit', validate);
 
 function validate(e) {
-     const regex = /^.{4,}$/;
+    
      const nameVal = checkUserName();
-     function checkUserName() {}
+     
      if (nameVal === false) {
            e.returnValue = false;
       alert("Please provide a User Name.");
@@ -25,7 +25,7 @@ function validate(e) {
      } 
 
      if (!regex.test(username.value)) {
-        
+       const regex = /^.{4,}$/;
         alert('Please re-enter name with 4 or more character.');
         username.focus();
         // return false;
@@ -51,6 +51,6 @@ function validate(e) {
 }
 
   
-      
+      function checkUserName() {}
   
 
